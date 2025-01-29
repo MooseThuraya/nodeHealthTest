@@ -63,9 +63,11 @@ export default {
         "strike": {
           "0%": {
             transform: "scaleX(0)",
+            transformOrigin: "left",
           },
           "100%": {
             transform: "scaleX(1)",
+            transformOrigin: "left",
           },
         },
       },

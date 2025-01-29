@@ -38,10 +38,10 @@ const Index = () => {
                 <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary animate-[strike_1s_ease-in_forwards_1s]"></span>
               </span>
             </p>
-            <p className="text-2xl font-medium text-accent animate-pulse">
-              Meet <span className="font-bold text-primary">EventAI</span> - the free, user friendly event planner
+            <p className="text-2xl font-medium text-accent">
+              Meet <span className="font-bold text-[#8B5CF6]">EventAI</span> - the free, user friendly event planner
               <br />
-              designed to get you from <span className="font-semibold">no-planner to pro-planner</span>.
+              designed to get you from <span className="font-semibold bg-[#F2FCE2] px-1 rounded">no-planner to pro-planner</span>.
             </p>
           </div>
           
