@@ -3,17 +3,17 @@ import WaitlistForm from "@/components/WaitlistForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-primary-light">
+    <div className="min-h-screen bg-gradient-to-b from-white to-secondary-light">
       <Navbar />
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-block mb-6 px-4 py-1.5 bg-white/80 rounded-full border border-primary/20 backdrop-blur-sm">
-            <span className="text-sm text-gray-600">EventAI Private Beta</span>
+            <span className="text-sm text-accent">EventAI Private Beta</span>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-secondary-DEFAULT mb-6 tracking-tight animate-fade-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-accent mb-6 tracking-tight animate-fade-up">
             The smartest and fastest way
             <br /> to plan your event
           </h1>

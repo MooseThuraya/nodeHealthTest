@@ -35,7 +35,7 @@ const WaitlistForm = () => {
   if (isSubmitted) {
     return (
       <div className="text-center animate-fade-up">
-        <h2 className="text-3xl font-bold mb-4 text-secondary">You're on the waitlist!</h2>
+        <h2 className="text-3xl font-bold mb-4 text-accent">You're on the waitlist!</h2>
         <p className="text-gray-600 mb-8">
           Interested in getting priority access? Refer your friends!
           <br />
@@ -44,14 +44,14 @@ const WaitlistForm = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Button
             variant="outline"
-            className="hover:bg-primary/5 transition-colors duration-300 border-primary text-gray-700"
+            className="hover:bg-primary/5 transition-colors duration-300 border-primary text-accent"
             onClick={() => window.open("https://linkedin.com/share", "_blank")}
           >
             Share on LinkedIn
           </Button>
           <Button
             variant="outline"
-            className="hover:bg-primary/5 transition-colors duration-300 border-primary text-gray-700"
+            className="hover:bg-primary/5 transition-colors duration-300 border-primary text-accent"
             onClick={() => window.open("https://twitter.com/intent/tweet", "_blank")}
           >
             Share on X (Twitter)
@@ -60,10 +60,10 @@ const WaitlistForm = () => {
         <div className="max-w-md mx-auto">
           <p className="text-sm text-gray-500 mb-2">Or use your unique referral link:</p>
           <div className="flex gap-2">
-            <Input value={referralLink} readOnly className="bg-gray-50" />
+            <Input value={referralLink} readOnly className="bg-gray-light" />
             <Button 
               onClick={copyReferralLink}
-              className="bg-primary hover:bg-primary-hover text-gray-800 hover:scale-105 active:scale-95 transition-transform duration-200"
+              className="bg-primary hover:bg-primary-hover text-white hover:scale-105 active:scale-95 transition-transform duration-200"
             >
               Copy
             </Button>
@@ -85,7 +85,7 @@ const WaitlistForm = () => {
         />
         <Button 
           type="submit"
-          className="h-12 px-6 bg-primary hover:bg-primary-hover text-gray-800 hover:scale-105 active:scale-95 transition-transform duration-200"
+          className="h-12 px-6 bg-primary hover:bg-primary-hover text-white hover:scale-105 active:scale-95 transition-transform duration-200"
         >
           Get Early Access
         </Button>
