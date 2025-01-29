@@ -36,38 +36,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Features Section */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12">Coming Soon</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Smart Planning",
-                description: "AI-powered suggestions for venues, vendors, and timelines",
-              },
-              {
-                title: "Collaboration",
-                description: "Real-time updates and communication with your team",
-              },
-              {
-                title: "Budget Tracking",
-                description: "Automated expense tracking and budget recommendations",
-              },
-            ].map((feature, index) => (
-              <div
-                key={feature.title}
-                className="p-6 rounded-xl bg-primary-light animate-fade-up"
-                style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-              >
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
