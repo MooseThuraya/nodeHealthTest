@@ -35,7 +35,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-fade-up transform hover:scale-[1.02] transition-transform duration-300" style={{ animationDelay: "0.3s" }}>
             <img
-              src="/lovable-uploads/46ba3f12-3d23-4d20-838a-96be8f623e4d.png"
+              src="/lovable-uploads/e6478ba2-a305-4bde-a020-f06ca1725663.png"
               alt="EventAI Demo"
               className="w-full h-auto"
             />
