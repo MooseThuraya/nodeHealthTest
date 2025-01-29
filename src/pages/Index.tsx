@@ -18,11 +18,23 @@ const Index = () => {
             <br /> to plan your event
           </h1>
           
-          <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto animate-fade-up leading-relaxed" style={{ animationDelay: "0.1s" }}>
-            Say goodbye to excel-sheets, WhatsApp groups, and missed deadlines. 
-            Meet EventAI - the free, user friendly event planner designed to get you 
-            from no-planner to pro-planner.
-          </p>
+          <div className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto animate-fade-up leading-relaxed space-y-4" style={{ animationDelay: "0.1s" }}>
+            <p>
+              Say goodbye to:
+            </p>
+            <p>
+              <span className="font-semibold">Excel-sheets</span> that are hard to manage,
+              <br />
+              messy <span className="font-semibold">WhatsApp groups</span>,
+              <br />
+              and <span className="font-semibold">missed deadlines</span>.
+            </p>
+            <p>
+              Meet <span className="font-semibold">EventAI</span> - the free, user friendly event planner
+              <br />
+              designed to get you from <span className="font-semibold">no-planner to pro-planner</span>.
+            </p>
+          </div>
           
           <div className="animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <WaitlistForm />
