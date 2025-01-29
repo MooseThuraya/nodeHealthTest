@@ -60,6 +60,14 @@ export default {
             opacity: "1",
           },
         },
+        "strike": {
+          "0%": {
+            transform: "scaleX(0)",
+          },
+          "100%": {
+            transform: "scaleX(1)",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",

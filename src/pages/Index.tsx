@@ -23,19 +23,19 @@ const Index = () => {
               Say goodbye to:
             </p>
             <p className="space-y-2">
-              <span className="relative inline-block group">
+              <span className="relative inline-block">
                 <span className="font-semibold">Excel-sheets</span> that are hard to manage
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary animate-[strike_1s_ease-in_forwards]"></span>
               </span>
               <br />
-              <span className="relative inline-block group">
+              <span className="relative inline-block">
                 messy <span className="font-semibold">WhatsApp groups</span>
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary animate-[strike_1s_ease-in_forwards_0.5s]"></span>
               </span>
               <br />
-              <span className="relative inline-block group">
+              <span className="relative inline-block">
                 and <span className="font-semibold">missed deadlines</span>
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary animate-[strike_1s_ease-in_forwards_1s]"></span>
               </span>
             </p>
             <p className="text-2xl font-medium text-accent animate-pulse">
