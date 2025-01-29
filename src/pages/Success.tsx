@@ -27,7 +27,7 @@ const Success = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-secondary-light">
+    <div className="min-h-screen bg-gradient-to-b from-secondary to-secondary-light">
       <div className="max-w-7xl mx-auto px-4">
         <div className="pt-32 text-center">
           <div className="inline-block mb-6 px-4 py-1.5 bg-white/80 rounded-full border border-primary/20 backdrop-blur-sm">

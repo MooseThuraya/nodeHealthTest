@@ -14,7 +14,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-secondary-light">
+    <div className="min-h-screen bg-gradient-to-b from-secondary to-secondary-light">
       <Navbar />
       
       {/* Hero Section */}
