@@ -22,15 +22,24 @@ const Index = () => {
             <p>
               Say goodbye to:
             </p>
-            <p>
-              <span className="font-semibold">Excel-sheets</span> that are hard to manage,
+            <p className="space-y-2">
+              <span className="relative inline-block group">
+                <span className="font-semibold">Excel-sheets</span> that are hard to manage
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              </span>
               <br />
-              messy <span className="font-semibold">WhatsApp groups</span>,
+              <span className="relative inline-block group">
+                messy <span className="font-semibold">WhatsApp groups</span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              </span>
               <br />
-              and <span className="font-semibold">missed deadlines</span>.
+              <span className="relative inline-block group">
+                and <span className="font-semibold">missed deadlines</span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+              </span>
             </p>
-            <p>
-              Meet <span className="font-semibold">EventAI</span> - the free, user friendly event planner
+            <p className="text-2xl font-medium text-accent animate-pulse">
+              Meet <span className="font-bold text-primary">EventAI</span> - the free, user friendly event planner
               <br />
               designed to get you from <span className="font-semibold">no-planner to pro-planner</span>.
             </p>
