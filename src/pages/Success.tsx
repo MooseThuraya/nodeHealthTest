@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 import confetti from "canvas-confetti";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const Success = () => {
   const [referralLink, setReferralLink] = useState("https://eventai.com/ref=ABC123");
@@ -38,26 +39,40 @@ const Success = () => {
           </h1>
           
           <div className="max-w-2xl mx-auto">
-            <p className="text-gray-600 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <p className="text-gray-600 mb-4 animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Interested in getting priority access? Refer your friends!
-              <br />
-              The more friends that join, the sooner you'll get access.
             </p>
+
+            <div className="bg-primary/10 rounded-lg p-4 mb-8 animate-fade-up transform hover:scale-105 transition-transform duration-300" style={{ animationDelay: "0.15s" }}>
+              <p className="text-lg font-semibold text-accent">
+                Refer 20 friends, and we'll plan your next event!
+              </p>
+            </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <div className="flex justify-center gap-6 mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <Button
                 variant="outline"
+                size="icon"
                 className="hover:bg-primary/5 transition-colors duration-300 border-primary text-accent"
                 onClick={() => window.open("https://linkedin.com/share", "_blank")}
               >
-                Share on LinkedIn
+                <Linkedin className="w-5 h-5" />
               </Button>
               <Button
                 variant="outline"
+                size="icon"
                 className="hover:bg-primary/5 transition-colors duration-300 border-primary text-accent"
                 onClick={() => window.open("https://twitter.com/intent/tweet", "_blank")}
               >
-                Share on X (Twitter)
+                <Twitter className="w-5 h-5" />
+              </Button>
+              <Button
+                variant="outline"
+                size="icon"
+                className="hover:bg-primary/5 transition-colors duration-300 border-primary text-accent"
+                onClick={() => window.open("https://instagram.com", "_blank")}
+              >
+                <Instagram className="w-5 h-5" />
               </Button>
             </div>
             
