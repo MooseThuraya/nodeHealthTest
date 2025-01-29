@@ -1,12 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { toast } from "./ui/use-toast";
+import confetti from "canvas-confetti";
 
 const WaitlistForm = () => {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [referralLink, setReferralLink] = useState("https://eventai.com/ref=ABC123");
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Delay the visibility of the content
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const triggerConfetti = () => {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+      colors: ['#FFDEE2', '#D3E4FD', '#FEC6A1', '#F2FCE2']
+    });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,6 +38,7 @@ const WaitlistForm = () => {
       return;
     }
     setIsSubmitted(true);
+    triggerConfetti();
     toast({
       title: "Welcome to the waitlist!",
       description: "You'll be among the first to know when we launch.",
@@ -35,11 +56,15 @@ const WaitlistForm = () => {
   if (isSubmitted) {
     return (
       <div className="text-center animate-fade-up">
-        <h2 className="text-3xl font-bold mb-4 text-accent">You're on the waitlist!</h2>
+        <div className="inline-block mb-6 px-4 py-1.5 bg-white/80 rounded-full border border-primary/20 backdrop-blur-sm">
+          <span className="text-sm text-accent">EventAI Private Beta</span>
+        </div>
+        
+        <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-accent">You're on the waitlist!</h2>
         <p className="text-gray-600 mb-8">
           Interested in getting priority access? Refer your friends!
           <br />
-          The more friends that join, the faster you'll get access.
+          The more friends that join, the sooner you'll get access.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Button

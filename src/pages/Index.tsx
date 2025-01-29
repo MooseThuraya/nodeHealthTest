@@ -1,7 +1,18 @@
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import WaitlistForm from "@/components/WaitlistForm";
 
 const Index = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-secondary-light">
       <Navbar />
@@ -18,24 +29,24 @@ const Index = () => {
             <br /> to plan your event
           </h1>
           
-          <div className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto animate-fade-up leading-relaxed space-y-4" style={{ animationDelay: "0.1s" }}>
+          <div className={`text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto animate-fade-up leading-relaxed space-y-4 ${isVisible ? 'opacity-100' : 'opacity-0'}`} style={{ animationDelay: "0.1s", transition: "opacity 0.5s ease-in-out" }}>
             <p>
               Say goodbye to:
             </p>
             <p className="space-y-2">
               <span className="relative inline-block">
                 <span className="font-semibold">Excel-sheets</span> that are hard to manage
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] animate-[strike_1s_ease-in_forwards]"></span>
+                <span className={`absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] ${isVisible ? 'animate-[strike_1s_ease-in_forwards]' : ''}`}></span>
               </span>
               <br />
               <span className="relative inline-block">
                 messy <span className="font-semibold">WhatsApp groups</span>
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] animate-[strike_1s_ease-in_forwards_0.5s]"></span>
+                <span className={`absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] ${isVisible ? 'animate-[strike_1s_ease-in_forwards_0.5s]' : ''}`}></span>
               </span>
               <br />
               <span className="relative inline-block">
                 and <span className="font-semibold">missed deadlines</span>
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] animate-[strike_1s_ease-in_forwards_1s]"></span>
+                <span className={`absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] ${isVisible ? 'animate-[strike_1s_ease-in_forwards_1s]' : ''}`}></span>
               </span>
             </p>
             <p className="text-2xl font-medium text-accent">
