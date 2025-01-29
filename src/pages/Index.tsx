@@ -13,12 +13,12 @@ const Index = () => {
             <span className="text-sm text-accent">EventAI Private Beta</span>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-accent mb-6 tracking-tight animate-fade-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-accent mb-8 tracking-tight animate-fade-up">
             The smartest and fastest way
             <br /> to plan your event
           </h1>
           
-          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto animate-fade-up leading-relaxed" style={{ animationDelay: "0.1s" }}>
+          <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-2xl mx-auto animate-fade-up leading-relaxed" style={{ animationDelay: "0.1s" }}>
             Say goodbye to excel-sheets, WhatsApp groups, and missed deadlines. 
             Meet EventAI - the free, user friendly event planner designed to get you 
             from no-planner to pro-planner.
