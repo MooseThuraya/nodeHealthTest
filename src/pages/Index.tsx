@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import WaitlistForm from "@/components/WaitlistForm";
-import { XSquare } from "lucide-react";
 
 const Index = () => {
   return (
@@ -19,27 +18,11 @@ const Index = () => {
             <br /> to plan your event
           </h1>
           
-          <div className="max-w-3xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <p className="text-xl text-gray-600 mb-6">Say goodbye to:</p>
-            <ul className="space-y-3 text-left max-w-md mx-auto">
-              <li className="flex items-center gap-3 text-lg text-gray-600">
-                <XSquare className="text-primary" />
-                Excel sheets that are hard to manage
-              </li>
-              <li className="flex items-center gap-3 text-lg text-gray-600">
-                <XSquare className="text-primary" />
-                WhatsApp groups that get messy
-              </li>
-              <li className="flex items-center gap-3 text-lg text-gray-600">
-                <XSquare className="text-primary" />
-                Missed deadlines and last-minute chaos
-              </li>
-            </ul>
-            <p className="text-xl text-gray-600 mt-6 leading-relaxed">
-              Meet EventAI - the free, user friendly event planner designed to get you 
-              from no-planner to pro-planner in minutes.
-            </p>
-          </div>
+          <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto animate-fade-up leading-relaxed" style={{ animationDelay: "0.1s" }}>
+            Say goodbye to excel-sheets, WhatsApp groups, and missed deadlines. 
+            Meet EventAI - the free, user friendly event planner designed to get you 
+            from no-planner to pro-planner.
+          </p>
           
           <div className="animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <WaitlistForm />
