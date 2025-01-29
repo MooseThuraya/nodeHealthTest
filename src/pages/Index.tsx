@@ -25,23 +25,23 @@ const Index = () => {
             <p className="space-y-2">
               <span className="relative inline-block">
                 <span className="font-semibold">Excel-sheets</span> that are hard to manage
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary animate-[strike_1s_ease-in_forwards]"></span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] animate-[strike_1s_ease-in_forwards]"></span>
               </span>
               <br />
               <span className="relative inline-block">
                 messy <span className="font-semibold">WhatsApp groups</span>
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary animate-[strike_1s_ease-in_forwards_0.5s]"></span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] animate-[strike_1s_ease-in_forwards_0.5s]"></span>
               </span>
               <br />
               <span className="relative inline-block">
                 and <span className="font-semibold">missed deadlines</span>
-                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-primary animate-[strike_1s_ease-in_forwards_1s]"></span>
+                <span className="absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] animate-[strike_1s_ease-in_forwards_1s]"></span>
               </span>
             </p>
             <p className="text-2xl font-medium text-accent">
-              Meet <span className="font-bold text-[#8B5CF6]">EventAI</span> - the free, user friendly event planner
+              Meet <span className="font-bold text-[#403E43]">EventAI</span> - the free, user friendly event planner
               <br />
-              designed to get you from <span className="font-semibold bg-[#F2FCE2] px-1 rounded">no-planner to pro-planner</span>.
+              designed to get you from <span className="font-semibold bg-[#FEF7CD] px-1 rounded">no-planner to pro-planner</span>.
             </p>
           </div>
           
