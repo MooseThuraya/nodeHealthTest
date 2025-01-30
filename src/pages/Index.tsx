@@ -21,7 +21,7 @@ const Index = () => {
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-block mb-6 px-4 py-1.5 bg-white/80 rounded-full border border-primary/20 backdrop-blur-sm">
-            <span className="text-sm text-accent">EventAI Private Beta</span>
+            <span className="text-sm text-accent">Joya Private Beta</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-accent mb-8 tracking-tight animate-fade-up">
@@ -75,8 +75,8 @@ const Index = () => {
               </span>
             </p>
             <p className="text-2xl font-medium text-accent">
-              Meet <span className="font-bold text-[#403E43]">EventAI</span> -
-              the free, user friendly event planner
+              Meet <span className="font-bold text-[#403E43]">Joya</span> - the
+              free, user friendly event planner
               <br />
               designed to get you from{" "}
               <span className="font-semibold bg-[#FEF7CD] px-1 rounded">

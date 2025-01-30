@@ -6,7 +6,7 @@ import confetti from "canvas-confetti";
 import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const Success = () => {
-  const [referralLink, setReferralLink] = useState("https://eventai.com/ref=ABC123");
+  const [referralLink, setReferralLink] = useState("https://joya.com/ref=ABC123");
 
   useEffect(() => {
     // Trigger confetti when the page loads
@@ -31,7 +31,7 @@ const Success = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="pt-32 text-center">
           <div className="inline-block mb-6 px-4 py-1.5 bg-white/80 rounded-full border border-primary/20 backdrop-blur-sm">
-            <span className="text-sm text-accent">EventAI Private Beta</span>
+            <span className="text-sm text-accent">Joya Private Beta</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-accent animate-fade-up">

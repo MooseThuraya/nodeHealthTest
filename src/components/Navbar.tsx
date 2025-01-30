@@ -6,19 +6,22 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-xl font-bold text-accent hover:text-accent-light transition-colors">
-              EventAI
+            <Link
+              to="/"
+              className="text-xl font-bold text-accent hover:text-accent-light transition-colors"
+            >
+              Joya
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="text-gray-600 hover:text-accent transition-colors"
             >
               Home
             </Link>
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className="text-gray-600 hover:text-accent transition-colors"
             >
               Contact
