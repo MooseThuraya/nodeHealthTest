@@ -45,7 +45,9 @@ const Index = () => {
                 hard to manage
                 <span
                   className={`absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] ${
-                    isVisible ? "animate-[strike_1s_ease-in_forwards]" : ""
+                    isVisible
+                      ? "animate-[strike_1s_ease-in_forwards]"
+                      : "scale-x-0"
                   }`}
                 ></span>
               </span>
@@ -54,7 +56,9 @@ const Index = () => {
                 messy <span className="font-semibold">WhatsApp groups</span>
                 <span
                   className={`absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] ${
-                    isVisible ? "animate-[strike_1s_ease-in_forwards]" : ""
+                    isVisible
+                      ? "animate-[strike_1s_ease-in_forwards]"
+                      : "scale-x-0"
                   }`}
                 ></span>
               </span>
@@ -63,7 +67,9 @@ const Index = () => {
                 and <span className="font-semibold">missed deadlines</span>
                 <span
                   className={`absolute left-0 right-0 top-1/2 h-0.5 bg-[#ea384c] ${
-                    isVisible ? "animate-[strike_1s_ease-in_forwards]" : ""
+                    isVisible
+                      ? "animate-[strike_1s_ease-in_forwards]"
+                      : "scale-x-0"
                   }`}
                 ></span>
               </span>
